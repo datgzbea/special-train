@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang Chủ</title>
+    <link rel="icon" href="images/logo.png">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+    <header id="demo">
+        <div>
+            <img src="images/logo.png" alt="logo">
+        </div>
+        <h1>Chuyển Động Tiên Phong</h1>
+    </header>
+    <section class="menu">
+        <ul>
+            <li><a href="index.html">TRANG CHỦ</a> </li>
+            <li><a href="sanpham.html">SẢN PHẨM</a> </li>
+            <li><a href="dichvu.html">DỊCH VỤ</a> </li>
+            <li><a href="gioithieu.html">VỀ CHÚNG TÔI</a> </li>
+            <li><a href="dangnhap.html"><i class="fa-solid fa-user"></i></a></li>
+            <li><a href="tintuc.html"><i class="fa-solid fa-bell"></i></a></li>
+        </ul>
+    </section>
+    <section>
+        <div class="login-container">
+            <h2>Đăng Nhập</h2>
+            <form id="loginForm">
+                <label for="username">Tên đăng nhập</label>
+                <input type="text" id="username" name="username" required>
+
+                <label for="password">Mật khẩu</label>
+                <input type="password" id="password" name="password" required>
+
+                <button type="submit">Đăng Nhập</button>
+            </form>
+            <p id="error-message" style="color:red; display:none;">Vui lòng điền đúng thông tin!</p>
+
+            <div class="login-links">
+                <a href="#">Quên mật khẩu?</a>
+                <a href="#">Chưa có tài khoản? Đăng ký</a>
+            </div>
+        </div>
+    </section>
+
+    <footer style="text-align:center; margin-top: 40px;">
+        <p>&copy; 2025 Toyota Việt Nam</p>
+    </footer>
+</body>
+
+</html>

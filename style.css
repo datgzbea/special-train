@@ -1,0 +1,390 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    width: 100%;
+}
+
+header {
+    width: 80%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+header>div {
+    float: left;
+}
+
+header>div>img {
+    height: 150px;
+    width: 150px;
+}
+
+header>h1 {
+    color: blue;
+    text-transform: uppercase;
+    float: right;
+    text-shadow: 2px 3px 3px gold;
+    margin-top: 50px;
+    margin-right: 30px;
+    font-size: 3vw;
+    animation: doimauchu ease 2s infinite;
+}
+
+@keyframes doimauchu {
+    from {
+        color: darkblue;
+    }
+
+    to {
+        color: red;
+    }
+}
+
+section.menu {
+    background-color: tomato;
+}
+
+section.menu>ul {
+    display: flex;
+}
+
+section.menu>ul>li {
+    list-style-type: none;
+    border-right: 2px solid blue;
+}
+
+section.menu>ul>li:nth-child(5) {
+    margin-left: auto;
+}
+
+section.menu>ul>li:nth-child(4) {
+    border-right: none;
+}
+
+section.menu>ul>li>a {
+    text-decoration: none;
+    display: block;
+    min-width: 120px;
+    text-align: center;
+    padding: 15px;
+    font-weight: bold;
+}
+
+section.menu>ul>li>a:hover {
+    background-color: darkblue;
+    color: white;
+}
+
+section.banner {
+    height: 400px;
+}
+
+section.banner>img {
+    height: 400px;
+}
+
+section.sub-menu {
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+section.sub-menu>ul {
+    display: flex;
+    font-size: 25px;
+    font-weight: bold;
+    justify-content: space-around;
+}
+
+section.sub-menu>ul>li {
+    list-style-type: none;
+}
+
+section.sub-menu>ul>li>a {
+    background-color: aqua;
+    text-decoration: none;
+    color: darkblue;
+}
+
+section.sub-menu>ul>li>a:hover {
+    color: red;
+}
+
+.cacsanpham {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    height: 600px;
+    overflow: auto;
+}
+
+.sanpham {
+    width: 32%;
+    border: 2px solid rgba(0, 0, 0, 0.6);
+    border-radius: 10px;
+    padding: 15px;
+    margin: 5px;
+    box-shadow: 2px 3px 2px black;
+}
+
+.sanpham>h2 {
+    text-align: center;
+    color: brown;
+    margin-bottom: 10px;
+}
+
+.sanpham>h3 {
+    text-align: center;
+    color: darkblue;
+    font-size: 16px;
+}
+
+.sanpham>p {
+    text-align: justify;
+    text-indent: 20px;
+}
+
+.sanpham img {
+    height: 200px;
+    transition: transform ease 1s;
+}
+
+.sanpham img:hover {
+    transform: skew(-10deg);
+}
+
+.dichvutong {
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+.cacdichvu {
+    display: flex;
+}
+
+.dichvu {
+    width: 23%;
+    padding: 10px;
+    margin: 10px;
+}
+
+.dichvu>div {
+    text-align: center;
+}
+
+.dichvu>div>img {
+    height: 70px;
+    width: 70px;
+}
+
+.dichvu>h3 {
+    color: darkblue;
+    text-align: center;
+}
+
+.dichvu>p {
+    text-align: justify;
+}
+
+.lienhe {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+}
+
+.lienhe>.traodoivoichungtoi {
+    padding: 20px;
+    width: 50%;
+}
+
+.lienhe>.traodoivoichungtoi>form>div>input[type=text],
+.lienhe>.traodoivoichungtoi>form>div>input[type=tel] {
+    width: 49.5%;
+}
+
+input[type=text],
+input[type=tel],
+input[type=email] {
+    width: 100%;
+    background-color: lightgray;
+    border: none;
+    padding: 10px;
+    margin-top: 5px;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+textarea {
+    width: 100%;
+    height: 100px;
+    background-color: lightgray;
+    border: none;
+    padding: 10px;
+    margin-top: 5px;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+input[type=submit] {
+    min-width: 120px;
+    background-color: darkred;
+    border: none;
+    padding: 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    font-size: 15px;
+}
+
+footer {
+    color: black;
+}
+
+footer>table>tbody>tr:first-child {
+    height: 50px;
+    font-weight: bold;
+}
+
+.gioithieu-daydu {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: #f9f9f9;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    font-family: 'Segoe UI', sans-serif;
+    line-height: 1.7;
+    color: #333;
+}
+
+.gioithieu-daydu h2 {
+    font-size: 28px;
+    margin-bottom: 15px;
+    color: #b22222;
+    border-bottom: 2px solid #b22222;
+    padding-bottom: 8px;
+}
+
+.gioithieu-daydu p {
+    margin-bottom: 15px;
+    font-size: 17px;
+}
+
+.gioithieu-daydu ul {
+    padding-left: 20px;
+    margin-top: 10px;
+    font-size: 17px;
+}
+
+.gioithieu-daydu li {
+    margin-bottom: 8px;
+    list-style-type: disc;
+}
+
+.login-container {
+    max-width: 400px;
+    margin: 60px auto;
+    padding: 30px;
+    background-color: #f0f0f0;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.login-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #b22222;
+}
+
+.login-container label {
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+
+.login-container input[type="text"],
+.login-container input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+}
+
+.login-container button {
+    margin-top: 20px;
+    width: 100%;
+    padding: 12px;
+    background-color: #b22222;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.login-container button:hover {
+    background-color: #8b1a1a;
+}
+
+.login-links {
+    margin-top: 15px;
+    text-align: center;
+}
+
+.login-links a {
+    display: inline-block;
+    margin: 5px;
+    color: #b22222;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.login-links a:hover {
+    text-decoration: underline;
+}
+
+.tintuc-container {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 20px;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.tintuc-container h1 {
+    text-align: center;
+    margin-bottom: 40px;
+    color: #b22222;
+}
+
+.news-item {
+    margin-bottom: 40px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #ccc;
+}
+
+.news-item h2 {
+    color: #333;
+    font-size: 24px;
+}
+
+.news-item p.date {
+    font-size: 14px;
+    color: #888;
+    margin-bottom: 10px;
+}
+
+.news-item p.content {
+    font-size: 17px;
+    line-height: 1.6;
+    color: #444;
+}
